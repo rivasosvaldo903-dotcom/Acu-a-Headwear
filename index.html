@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acuña Headwear | Gorras</title>
+
+    <link rel="icon" type="image/png" href="img/acuña%20headwear.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <nav class="navbar">
+
+            <a class="brand" href="#inicio" aria-label="Acuña Headwear, inicio">
+                <img src="img/acuña headwear.png" alt="">
+                <span class="logo">
+                    ACUÑA <span>HEADWEAR</span>
+                </span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#gorras">Gorras</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button class="cart-button" onclick="mostrarCarrito()">
+                🛒 Carrito
+                <span id="contador">0</span>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">ACUÑA • MÉXICO</p>
+
+            <h1>
+                TU ESTILO.<br>
+                <span>TU GORRA.</span>
+            </h1>
+
+            <p>
+                Gorras seleccionadas para quienes buscan
+                destacar con estilo.
+            </p>
+
+            <a href="#gorras" class="btn">
+                VER COLECCIÓN
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTOS -->
+    <section id="gorras" class="products-section">
+
+        <div class="section-title">
+            <p>COLECCIÓN</p>
+            <h2>Gorras destacadas</h2>
+        </div>
+
+
+        <div class="products-grid">
+
+            <!-- PRODUCTO 1 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="img/gorra1.jpg" alt="Gorra negra">
+                </div>
+
+                <div class="product-info">
+                    <h3>Gorra Acuña Black</h3>
+
+                    <p class="category">
+                        Premium
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>$499 MXN</strong>
+
+                        <button onclick="agregarCarrito('Gorra Acuña Black', 499)">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 2 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="img/gorra2.jpg" alt="Gorra beige">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Gorra Acuña Beige</h3>
+
+                    <p class="category">
+                        Casual
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>$449 MXN</strong>
+
+                        <button onclick="agregarCarrito('Gorra Acuña Beige', 449)">
+                            Agregar
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="img/gorra3.jpg" alt="Gorra verde">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Gorra México Green</h3>
+
+                    <p class="category">
+                        Limited Edition
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>$600 MXN</strong>
+
+                        <button onclick="agregarCarrito('Gorra México Green', 549)">
+                            Agregar
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 4 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="img/gorra4.jpg" alt="Gorra azul">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Gorra Acuña Blue</h3>
+
+                    <p class="category">
+                        Streetwear
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>$499 MXN</strong>
+
+                        <button onclick="agregarCarrito('Gorra Acuña Blue', 499)">
+                            Agregar
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="about">
+
+        <div>
+
+            <p>ACUÑA HEADWEAR</p>
+
+            <h2>
+                NACIDOS EN ACUÑA.
+                <br>
+                HECHOS PARA DESTACAR.
+            </h2>
+
+            <p>
+                Una marca inspirada en el estilo mexicano,
+                la cultura urbana y la identidad de nuestra ciudad.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+
+        <h2>¿Tienes alguna pregunta?</h2>
+
+        <p>
+            Escríbenos y conoce nuestra colección.
+        </p>
+
+        <button onclick="contactar()">
+            CONTACTAR
+        </button>
+
+        <div class="social-links" aria-label="Redes sociales">
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EHCjjTRsn%2F%3Fmibextid%3DwwXIfr%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio&amp;e=AUBjd-eWnfD6NGR5ff21393uasdsFrtkCMOfe8KpsgwlVyXRudhhGgrqCr2c1NkjbjxXTfbI8emSshBjdjkThpx2Mf8pSLElPE_srLp8l4NoqqU11GsW1xSlbZ6X9Iu6158CLp0" target="_blank" rel="noopener noreferrer">
+                <span class="social-label">Facebook</span>
+                <span class="social-handle">@acunaheadwear</span>
+            </a>
+            <a href="https://www.instagram.com/acheadwear/" target="_blank" rel="noopener noreferrer">
+                <span class="social-label">Instagram</span>
+                <span class="social-handle">@acheadwear</span>
+            </a>
+        </div>
+
+        <div class="contact-qr">
+            <div>
+                <p class="qr-kicker">CONTACTO DIRECTO</p>
+                <h3>Escanea para escribirnos</h3>
+                <p class="qr-description">Abre WhatsApp desde tu teléfono y conoce nuestra colección.</p>
+            </div>
+            <div class="qr-codes">
+                <a class="qr-code" href="https://wa.me/528771182967" target="_blank" rel="noopener noreferrer">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwa.me%2F528771182967" alt="Código QR para contactar a Acuña Headwear por WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CARRITO -->
+    <div id="carrito" class="cart">
+
+        <div class="cart-content">
+
+            <button class="close" onclick="cerrarCarrito()" aria-label="Cerrar carrito">×</button>
+
+            <p class="cart-kicker">ACUÑA / CHECKOUT</p>
+            <h2>Tu carrito</h2>
+
+            <div id="productos-carrito">
+                <p>Tu carrito está vacío.</p>
+            </div>
+
+            <div class="cart-total">
+                Total: $<span id="total">0</span> MXN
+            </div>
+
+            <form id="checkout-form" class="checkout-form">
+                <div class="checkout-heading">
+                    <h3>Finalizar compra</h3>
+                    <span>Paso 01</span>
+                </div>
+
+                <label for="cliente-nombre">Nombre completo</label>
+                <input id="cliente-nombre" name="nombre" type="text" autocomplete="name" required>
+
+                <label for="cliente-telefono">Teléfono</label>
+                <input id="cliente-telefono" name="telefono" type="tel" autocomplete="tel" required>
+
+                <label for="cliente-direccion">Dirección de entrega</label>
+                <textarea id="cliente-direccion" name="direccion" rows="2" autocomplete="street-address" required></textarea>
+
+                <fieldset>
+                    <legend>Forma de pago</legend>
+                    <label class="payment-option">
+                        <input type="radio" name="metodoPago" value="mercado-pago" checked>
+                        <span><strong>Mercado Pago</strong><small>Tarjeta, débito o crédito</small></span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="metodoPago" value="transferencia">
+                        <span><strong>Transferencia bancaria</strong><small>Te enviaremos los datos por WhatsApp</small></span>
+                    </label>
+                </fieldset>
+
+                <button class="checkout" type="submit">
+                    CONTINUAR AL PAGO
+                </button>
+                <p class="checkout-note">El pago se procesa de forma segura con el proveedor seleccionado.</p>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="notificacion-carrito" class="cart-notification" role="status" aria-live="polite">
+        <span class="notification-mark">✓</span>
+        <span class="notification-copy">
+            <strong>Agregado al carrito</strong>
+            <span id="producto-agregado"></span>
+        </span>
+        <button type="button" onclick="mostrarCarrito()">VER CARRITO</button>
+        <button class="notification-close" type="button" onclick="cerrarNotificacion()" aria-label="Cerrar notificación">×</button>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            ACUÑA <span>HEADWEAR</span>
+        </div>
+
+        <p>
+            © 2026 Acuña Headwear. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
